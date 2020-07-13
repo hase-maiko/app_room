@@ -2,34 +2,32 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// jQueryインポート
 import jQuery from 'jquery'
 global.jquery = jQuery
 global.$ = jQuery
 window.$ = window.jQuery = require('jquery')
 
+// fontAwesomeインポート
 import {
   library
 } from '@fortawesome/fontawesome-svg-core'
 import {
-  faUser,
-  faSignOutAlt,
-  faEllipsisV
+  faEye,
+  faEyeSlash
 } from '@fortawesome/free-solid-svg-icons'
 import {
   FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome'
 
 library.add(
-  faUser,
-  faSignOutAlt,
-  faEllipsisV
+  faEye,
+  faEyeSlash
 )
-
 Vue.component('fa', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
-// ここから追加
 import {
   firestorePlugin
 } from 'vuefire'
