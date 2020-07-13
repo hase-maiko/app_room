@@ -1,7 +1,11 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p>現在時刻</p>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+    <router-link to="/user">ユーザ登録</router-link>
+
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
@@ -16,3 +20,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+  p {
+    color: red;
+  }
+</style>
