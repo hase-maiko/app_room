@@ -27,6 +27,14 @@ Vue.use(VueRouter)
     component: function () {
       return import( /* webpackChunkName: "about" */ '../views/User.vue')
     }
+  },
+  {
+    path: '/confirmation',
+    name: 'Confirmation',
+    // component: Confirmation
+    component: function () {
+      return import( /* webpackChunkName: "about" */ '../views/Confirmation.vue')
+    }
   }
 ]
 

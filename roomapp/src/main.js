@@ -46,7 +46,6 @@ firebase.initializeApp({
   appId: "1:617912716362:web:d2253204baaf535e222ab3",
   measurementId: "G-5JWTB4YL0V"
 })
-
 export const db = firebase.firestore()
 export const auth = firebase.auth()
 // ここまで追加
