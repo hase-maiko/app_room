@@ -54,9 +54,16 @@ export default {
     return {
       dataUrl: null,
       file: null,
-      userName: "",
-      userMailAddress: "",
-      userPassword: ""
+      // userName: "",
+      // userMailAddress: "",
+      // userPassword: "",
+
+      userImage: this.$route.params.image,
+      userName: this.$route.params.name,
+      userMailAddress: this.$route.params.mail,
+      userPassword: this.$route.params.pass,
+
+
     };
   },
   // mounted

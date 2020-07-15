@@ -17,8 +17,15 @@
       <fa icon="eye" class="passVisible fa-fw" />
       <fa icon="eye-slash" class="passHidden fa-fw" />
     </span>
-          <button @click="signUp">登録</button>
+          <button @click="signUp">登録</button><br>
 
+          <router-link :to="{
+                      name: 'User',
+                      params: { name: userName,
+                                mail: userMailAddress,
+                                pass: userPassword,
+                                image: userImage}
+                    }">修正</router-link>
   </div>
 </template>
 <script>
